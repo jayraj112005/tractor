@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>tractor</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+     
+  </welcome-file-list>
+    <servlet>
+    <servlet-name>register_name</servlet-name>
+    <servlet-class>com.nt.Controller.RegisterController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>register_name</servlet-name>
+     <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>update_data</servlet-name>
+ <servlet-class>com.nt.Controller.UpdateController</servlet-class>
+ </servlet>
+ 
+  <servlet-mapping>
+ <servlet-name>update_data</servlet-name>
+<url-pattern>/update</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+ <servlet-name>delete_data</servlet-name>
+ <servlet-class>com.nt.Controller.DeleteController</servlet-class>
+ </servlet>
+ 
+  <servlet-mapping>
+ <servlet-name>delete_data</servlet-name>
+<url-pattern>/delete</url-pattern>
+</servlet-mapping>
+
+<servlet>
+ <servlet-name>select_data</servlet-name>
+ <servlet-class>com.nt.Controller.SelectController</servlet-class>
+ </servlet>
+ 
+  <servlet-mapping>
+ <servlet-name>select_data</servlet-name>
+<url-pattern>/select</url-pattern>
+</servlet-mapping>
+
+<servlet>
+ <servlet-name>selectAll_data</servlet-name>
+ <servlet-class>com.nt.Controller.SelectAllController</servlet-class>
+ </servlet>
+ 
+  <servlet-mapping>
+ <servlet-name>selectAll_data</servlet-name>
+<url-pattern>/selectAll</url-pattern>
+</servlet-mapping>
+
+<servlet>
+ <servlet-name>Login_data</servlet-name>
+ <servlet-class>com.nt.Controller.LoginController</servlet-class>
+ </servlet>
+ 
+  <servlet-mapping>
+ <servlet-name>Login_data</servlet-name>
+<url-pattern>/login</url-pattern>
+</servlet-mapping>
+
+<servlet>
+ <servlet-name>update_data_using_existing_value</servlet-name>
+ <servlet-class>com.nt.Controller.UpdateDataUsingExistingValueController</servlet-class>
+ </servlet>
+ 
+  <servlet-mapping>
+ <servlet-name>update_data_using_existing_value</servlet-name>
+<url-pattern>/updateData</url-pattern>
+</servlet-mapping>
+
+<servlet>
+ <servlet-name>loginUserData</servlet-name>
+ <servlet-class>com.nt.Controller.loginUserDataInCorner</servlet-class>
+ </servlet>
+ 
+  <servlet-mapping>
+ <servlet-name>loginUserData</servlet-name>
+<url-pattern>/logged</url-pattern>
+</servlet-mapping>
+
+<servlet>
+ <servlet-name>todayswork</servlet-name>
+ <servlet-class>com.nt.Controller.DailyWorkController</servlet-class>
+ </servlet>
+ 
+  <servlet-mapping>
+ <servlet-name>todayswork</servlet-name>
+<url-pattern>/insertDailyWork</url-pattern>
+</servlet-mapping>
+
+<servlet>
+ <servlet-name>totalearnings</servlet-name>
+ <servlet-class>com.nt.Controller.TotalEarningsController</servlet-class>
+ </servlet>
+ 
+  <servlet-mapping>
+ <servlet-name>totalearnings</servlet-name>
+<url-pattern>/earnings</url-pattern>
+</servlet-mapping>
+<servlet>
+
+ <servlet-name>totaentries</servlet-name>
+ <servlet-class>com.nt.Controller.totalEntriesController</servlet-class>
+ </servlet>
+ 
+  <servlet-mapping>
+ <servlet-name>totaentries</servlet-name>
+<url-pattern>/totalEntry</url-pattern>
+</servlet-mapping>
+</web-app>

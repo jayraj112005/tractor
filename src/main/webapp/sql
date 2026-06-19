@@ -1,0 +1,26 @@
+CREATE TABLE `tractor`.`register` (
+  `id` INT NOT NULL,
+  `userName` VARCHAR(45) NULL,
+  `userGmail` VARCHAR(45) NULL,
+  `contactNo` BIGINT(10) NULL,
+  `password` VARCHAR(45) NULL,
+  `tractorName` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `userGmail_UNIQUE` (`userGmail` ASC) VISIBLE);
+
+  
+  
+  
+  CREATE TABLE `tractor`.`work` (
+  `srno` INT NOT NULL,
+  `date` VARCHAR(45) NULL,
+  `nameOfLandHolder` VARCHAR(45) NULL,
+  `landName` VARCHAR(45) NULL,
+  `gunthe` VARCHAR(45) NULL,
+  `bill` INT NULL,
+  PRIMARY KEY (`srno`));
+  
+  
+ 
+  
+  
